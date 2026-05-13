@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Academics | Kipkabus Technical Institute</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <nav class="navbar" aria-label="Primary navigation">
+        <div class="brand" aria-label="Kipkabus Technical Institute">
+          <div class="logo" aria-hidden="true">KTI</div>
+          <div>
+            Kipkabus Technical Institute
+            <div style="font-weight:600; font-size:12px; color:rgba(255,255,255,.86)">Maroon/White • Learning & Skills</div>
+          </div>
+        </div>
+
+        <button class="burger" aria-label="Open menu" aria-expanded="false" type="button">☰ Menu</button>
+
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="academics.html">Academics</a>
+          <a href="admissions.html">Admissions</a>
+          <a href="environment.html">Environment</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="section">
+    <div class="container">
+      <h2 style="margin-top:0">Academics</h2>
+      <p class="small-note" style="margin-top:0">
+        Explore sample programs and learning approaches. Replace these details with your official courses and entry requirements.
+      </p>
+
+      <div class="grid-3" style="margin-top:14px">
+        <div class="card">
+          <h3>Certificate Programs</h3>
+          <p>Structured modules with practical assessments and job-ready outcomes.</p>
+        </div>
+        <div class="card">
+          <h3>Practical Training</h3>
+          <p>Workshop-based learning supported by supervisors and demonstration sessions.</p>
+        </div>
+        <div class="card">
+          <h3>ICT Integration</h3>
+          <p>Digital literacy to support research, learning, and workplace readiness.</p>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:14px">
+        <h3 style="margin-top:0">Learning Approach</h3>
+        <div class="grid-3" style="grid-template-columns: repeat(3, 1fr); margin-top:10px; gap:12px">
+          <div class="list-item"><b>Mentorship</b><span>Guidance for academic improvement and career direction.</span></div>
+          <div class="list-item"><b>Assessment</b><span>Practical tasks, tests, and portfolio evaluations.</span></div>
+          <div class="list-item"><b>Community Projects</b><span>Activities that strengthen teamwork and responsibility.</span></div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:14px">
+        <h3>Sample Course Modules</h3>
+        <ul style="margin:10px 0 0; padding-left:18px; color:var(--muted); line-height:1.8">
+          <li>Safety & Basic Workshop Skills</li>
+          <li>Core Technical Theory</li>
+          <li>Practical Demonstrations</li>
+          <li>Projects & Presentations</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <b>Kipkabus Technical Institute</b><br />
+        Maroon/White • School Website
+      </div>
+      <div>
+        <span>© <span id="year"></span> All Rights Reserved</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
+

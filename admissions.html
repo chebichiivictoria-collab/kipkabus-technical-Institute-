@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admissions | Kipkabus Technical Institute</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <nav class="navbar" aria-label="Primary navigation">
+        <div class="brand" aria-label="Kipkabus Technical Institute">
+          <div class="logo" aria-hidden="true">KTI</div>
+          <div>
+            Kipkabus Technical Institute
+            <div style="font-weight:600; font-size:12px; color:rgba(255,255,255,.86)">Maroon/White • Learning & Skills</div>
+          </div>
+        </div>
+
+        <button class="burger" aria-label="Open menu" aria-expanded="false" type="button">☰ Menu</button>
+
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="academics.html">Academics</a>
+          <a href="admissions.html">Admissions</a>
+          <a href="environment.html">Environment</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="section">
+    <div class="container">
+      <h2 style="margin-top:0">Admissions</h2>
+      <p class="small-note" style="margin-top:0">
+        Fill the steps below. This website is frontend-only—replace the links and add backend later if you want real submissions.
+      </p>
+
+      <div class="grid-3" style="margin-top:14px">
+        <div class="card">
+          <h3>Step 1: Choose a Program</h3>
+          <p>Pick the course you want to study. Make sure you meet the entry requirements.</p>
+        </div>
+        <div class="card">
+          <h3>Step 2: Prepare Documents</h3>
+          <p>ID/Passport, academic certificates, and any other required documents.</p>
+        </div>
+        <div class="card">
+          <h3>Step 3: Submit Application</h3>
+          <p>Use the Contact form to request admission details or use this page as a guide.</p>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:14px">
+        <h3 style="margin-top:0">Admission Checklist</h3>
+        <div class="grid-3" style="grid-template-columns: repeat(3, 1fr); margin-top:10px; gap:12px">
+          <div class="list-item"><b>Application Form</b><span>Download/print (placeholder).</span></div>
+          <div class="list-item"><b>Academic Transcripts</b><span>Attach copies of results.</span></div>
+          <div class="list-item"><b>National ID/Passport</b><span>Attach clear copies.</span></div>
+        </div>
+
+        <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:14px">
+          <a class="btn btn-primary" href="contact.html">Request Admission Info</a>
+          <a class="btn btn-ghost" href="#requirements">View Requirements</a>
+        </div>
+      </div>
+
+      <div class="card" id="requirements" style="margin-top:14px">
+        <h3>Entry Requirements (Example)</h3>
+        <ul style="margin:10px 0 0; padding-left:18px; color:var(--muted); line-height:1.8">
+          <li>Meet minimum academic requirements for the selected program.</li>
+          <li>Submit required documents and application details.</li>
+          <li>Attend an interview/practical assessment if required by the institute.</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <b>Kipkabus Technical Institute</b><br />
+        Maroon/White • School Website
+      </div>
+      <div>
+        <span>© <span id="year"></span> All Rights Reserved</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
+

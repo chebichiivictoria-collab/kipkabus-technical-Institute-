@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Kipkabus Technical Institute</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <nav class="navbar" aria-label="Primary navigation">
+        <div class="brand" aria-label="Kipkabus Technical Institute">
+          <div class="logo" aria-hidden="true">KTI</div>
+          <div>
+            Kipkabus Technical Institute
+            <div style="font-weight:600; font-size:12px; color:rgba(255,255,255,.86)">Maroon/White • Learning & Skills</div>
+          </div>
+        </div>
+
+        <button class="burger" aria-label="Open menu" aria-expanded="false" type="button">☰ Menu</button>
+
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="academics.html">Academics</a>
+          <a href="admissions.html">Admissions</a>
+          <a href="environment.html">Environment</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="section">
+    <div class="container">
+      <h2 style="margin-top:0">Contact Us</h2>
+      <p class="small-note" style="margin-top:0">
+        Frontend-only form (no backend). Replace the submit behavior once you add a server.
+      </p>
+
+      <div class="grid-3" style="margin-top:14px; grid-template-columns: 1fr 1fr 1fr;">
+        <div class="card">
+          <h3>Admissions</h3>
+          <p>Ask about programs, requirements, and timelines.</p>
+        </div>
+        <div class="card">
+          <h3>Academics</h3>
+          <p>Learn about courses, training approach, and support.</p>
+        </div>
+        <div class="card">
+          <h3>Environment</h3>
+          <p>Partnerships for clean campus and sustainability initiatives.</p>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:14px">
+        <h3 style="margin-top:0">Send a message</h3>
+        <form class="form" id="contactForm">
+          <div class="field">
+            <label for="fullName">Full Name *</label>
+            <input id="fullName" name="fullName" type="text" autocomplete="name" required />
+          </div>
+
+          <div class="field">
+            <label for="email">Email *</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone *</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="e.g. 07xx xxx xxx" />
+          </div>
+
+          <div class="field">
+            <label for="topic">Topic</label>
+            <select id="topic" name="topic">
+              <option value="Admissions">Admissions</option>
+              <option value="Academics">Academics</option>
+              <option value="Environment">Environment</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="field full">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" required placeholder="Write your message..."></textarea>
+          </div>
+
+          <div class="form-actions">
+            <div class="small-note">* Required fields</div>
+            <button class="btn btn-primary" type="submit">Submit Message</button>
+          </div>
+
+          <div class="toast" id="formToast" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+
+      <div class="card" style="margin-top:14px">
+        <h3 style="margin-top:0">School Contact Details (Placeholder)</h3>
+        <p><b>Location:</b> Kipkabus Technical Institute, (Add your town/area)</p>
+        <p><b>Email:</b> info@kipkabus-technical.example</p>
+        <p><b>Phone:</b> +254 7xx xxx xxx</p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <b>Kipkabus Technical Institute</b><br />
+        Maroon/White • School Website
+      </div>
+      <div>
+        <span>© <span id="year"></span> All Rights Reserved</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
+

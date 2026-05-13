@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About | Kipkabus Technical Institute</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <nav class="navbar" aria-label="Primary navigation">
+        <div class="brand" aria-label="Kipkabus Technical Institute">
+          <div class="logo" aria-hidden="true">KTI</div>
+          <div>
+            Kipkabus Technical Institute
+            <div style="font-weight:600; font-size:12px; color:rgba(255,255,255,.86)">Maroon/White • Learning & Skills</div>
+          </div>
+        </div>
+
+        <button class="burger" aria-label="Open menu" aria-expanded="false" type="button">☰ Menu</button>
+
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="academics.html">Academics</a>
+          <a href="admissions.html">Admissions</a>
+          <a href="environment.html">Environment</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="section">
+    <div class="container">
+      <h2 style="margin-top:0">About Us</h2>
+      <p class="small-note" style="margin-top:0">
+        Kipkabus Technical Institute is dedicated to developing practical skills, responsible citizenship,
+        and confidence for lifelong learning.
+      </p>
+
+      <div class="grid-3" style="margin-top:14px">
+        <div class="card">
+          <h3>Our Mission</h3>
+          <p>To provide high-quality technical and vocational training that prepares learners for work and entrepreneurship.</p>
+        </div>
+        <div class="card">
+          <h3>Our Vision</h3>
+          <p>To be a leading center of excellence in skills development and community impact.</p>
+        </div>
+        <div class="card">
+          <h3>Our Values</h3>
+          <p>Discipline • Integrity • Teamwork • Innovation • Respect for the environment.</p>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:14px">
+        <h3>Why Study With Us?</h3>
+        <p>
+          You will learn through hands-on training, mentorship, and structured practical assessments. We also promote
+          a culture of cleanliness, water conservation, and environmental awareness.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <b>Kipkabus Technical Institute</b><br />
+        Maroon/White • School Website
+      </div>
+      <div>
+        <span>© <span id="year"></span> All Rights Reserved</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
+

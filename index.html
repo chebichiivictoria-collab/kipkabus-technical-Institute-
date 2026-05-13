@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kipkabus Technical Institute | School Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <nav class="navbar" aria-label="Primary navigation">
+        <div class="brand" aria-label="Kipkabus Technical Institute">
+          <div class="logo" aria-hidden="true">KTI</div>
+          <div>
+            Kipkabus Technical Institute
+            <div style="font-weight:600; font-size:12px; color:rgba(255,255,255,.86)">Maroon/White • Learning & Skills</div>
+          </div>
+        </div>
+
+        <button class="burger" aria-label="Open menu" aria-expanded="false" type="button">☰ Menu</button>
+
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="academics.html">Academics</a>
+          <a href="admissions.html">Admissions</a>
+          <a href="environment.html">Environment</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-card">
+            <div class="kicker">Quality Training • Practical Skills</div>
+            <h1>Building skills for a brighter future.</h1>
+            <p class="lead">
+              Kipkabus Technical Institute offers career-focused learning, strong mentorship, and a supportive environment
+              for students to grow academically and professionally.
+            </p>
+
+            <div class="cta-row">
+              <a class="btn btn-primary" href="admissions.html">Apply Now</a>
+              <a class="btn btn-ghost" href="academics.html">Explore Courses</a>
+              <a class="btn btn-ghost" href="environment.html">Go Green</a>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <h2 style="margin:0 0 10px">Quick Highlights</h2>
+            <div class="list">
+              <div class="list-item">
+                <b>Hands-on Training</b>
+                <span>Practical sessions, workshops, and supervised practice.</span>
+              </div>
+              <div class="list-item">
+                <b>Student Support</b>
+                <span>Academic guidance, mentorship, and well-being initiatives.</span>
+              </div>
+              <div class="list-item">
+                <b>Community & Environment</b>
+                <span>Waste reduction, water saving, and awareness programs.</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:16px; flex-wrap:wrap;">
+          <div>
+            <h2>Featured Programs</h2>
+            <p class="small-note">A sample curriculum overview. You can edit these items to match your institute.</p>
+          </div>
+          <a class="btn btn-ghost" href="academics.html">View all</a>
+        </div>
+
+        <div class="grid-3" style="margin-top:14px">
+          <div class="card">
+            <h3>Technical & Vocational Skills</h3>
+            <p>Learn job-ready skills through structured modules and practical assessments.</p>
+          </div>
+          <div class="card">
+            <h3>Computing & ICT</h3>
+            <p>Programming fundamentals, office productivity, and digital literacy.</p>
+          </div>
+          <div class="card">
+            <h3>Business & Entrepreneurship</h3>
+            <p>Accounting basics, marketing principles, and real-world case studies.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <b>Kipkabus Technical Institute</b><br />
+        Maroon/White • School Website
+      </div>
+      <div>
+        <span>© <span id="year"></span> All Rights Reserved</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
+

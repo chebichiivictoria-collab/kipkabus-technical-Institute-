@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Environment | Kipkabus Technical Institute</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <nav class="navbar" aria-label="Primary navigation">
+        <div class="brand" aria-label="Kipkabus Technical Institute">
+          <div class="logo" aria-hidden="true">KTI</div>
+          <div>
+            Kipkabus Technical Institute
+            <div style="font-weight:600; font-size:12px; color:rgba(255,255,255,.86)">Maroon/White • Learning & Skills</div>
+          </div>
+        </div>
+
+        <button class="burger" aria-label="Open menu" aria-expanded="false" type="button">☰ Menu</button>
+
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="academics.html">Academics</a>
+          <a href="admissions.html">Admissions</a>
+          <a href="environment.html">Environment</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="section">
+    <div class="container">
+      <h2 style="margin-top:0">Go Green Program</h2>
+      <p class="small-note" style="margin-top:0">
+        Environmental responsibility is part of our training culture. Below are sample initiatives—edit the content to match your real activities.
+      </p>
+
+      <div class="grid-3" style="margin-top:14px">
+        <div class="card">
+          <h3>Waste Management</h3>
+          <p>Reduce littering, encourage sorting, and support clean-up days around campus.</p>
+        </div>
+        <div class="card">
+          <h3>Water Conservation</h3>
+          <p>Fix leaks, promote responsible water use, and encourage mindful habits among students.</p>
+        </div>
+        <div class="card">
+          <h3>Tree Planting</h3>
+          <p>Plant and care for trees to improve air quality and create a greener environment.</p>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:14px">
+        <h3 style="margin-top:0">Student Activities</h3>
+        <div class="grid-3" style="grid-template-columns: repeat(3, 1fr); margin-top:10px; gap:12px">
+          <div class="list-item"><b>Clean Campus Weeks</b><span>Monthly clean-up with teams from different classes.</span></div>
+          <div class="list-item"><b>Recycling Drives</b><span>Collect paper/plastics for proper disposal or partners.</span></div>
+          <div class="list-item"><b>Awareness Sessions</b><span>Talks, demonstrations, and practical tips on sustainability.</span></div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:14px">
+        <h3 style="margin-top:0">Sustainability Learning</h3>
+        <p>
+          Students can integrate environmental practices into projects: energy-saving habits, waste reduction techniques,
+          and community improvement initiatives.
+        </p>
+      </div>
+
+      <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:16px">
+        <a class="btn btn-primary" href="contact.html">Partner With Us</a>
+        <a class="btn btn-ghost" href="academics.html">Learn More Academics</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <b>Kipkabus Technical Institute</b><br />
+        Maroon/White • School Website
+      </div>
+      <div>
+        <span>© <span id="year"></span> All Rights Reserved</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
+
