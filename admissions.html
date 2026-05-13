@@ -77,9 +77,40 @@
           <li>Submit required documents and application details.</li>
           <li>Attend an interview/practical assessment if required by the institute.</li>
         </ul>
+
+        <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:14px">
+          <a class="btn btn-primary" href="contact.html">Contact Admissions Office</a>
+          <button class="btn btn-ghost" type="button" data-modal-target="#admissionModal" aria-haspopup="dialog">
+            View Scholarship Notes
+          </button>
+        </div>
       </div>
+
+      <!-- Modal -->
+      <section class="modal" id="admissionModal" data-modal="admissionModal" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="modal-backdrop" aria-hidden="true"></div>
+        <div class="modal-dialog" role="document">
+          <div class="modal-header">
+            <h3 style="margin:0">Scholarship Notes (Example)</h3>
+            <button type="button" class="modal-close" data-modal-close aria-label="Close dialog">✕</button>
+          </div>
+          <div class="modal-body">
+            <p class="small-note" style="margin-top:0">This is placeholder content. Replace it with your official scholarship/benefits information.</p>
+            <ul style="margin:10px 0 0; padding-left:18px; color:var(--muted); line-height:1.8">
+              <li>Merit-based selection and/or need-based consideration.</li>
+              <li>Some programs may require practical assessment or interview.</li>
+              <li>Applicants may be notified after reviewing documents.</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-primary" href="contact.html">Ask for Eligibility</a>
+            <button class="btn btn-ghost" type="button" data-modal-close>Close</button>
+          </div>
+        </div>
+      </section>
     </div>
   </main>
+
 
   <footer>
     <div class="container footer-inner">
